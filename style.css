@@ -1,0 +1,54 @@
+*{
+    color : white;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+}
+.btn-primary{
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+.card-title{
+    color: black;
+}
+body{
+    background: black !important;
+}
+.searchPlace{
+    width: 25%;
+    margin: auto;
+}
+.searchBtn{
+    background-color: white;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    width: 100px;
+    margin-left: 100px;
+    border-radius: 5em;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all 1s;
+}
+.searchBtn:hover{
+    background: black;
+    color: white;
+    border: 3px solid white;
+
+}
+.animeResults{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+#searchBox{
+    width: 299px;    
+    background-color: white;
+    border-radius: 5em;
+    color: black;
+}
+.card{
+    height: 40em !important;
+}
