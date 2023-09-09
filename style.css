@@ -52,3 +52,11 @@ body{
 .card{
     height: 40em !important;
 }
+.loading{
+    width: 38%;
+    margin: auto;
+    display: none;
+}
+.showLoadin{
+    display: block;
+}
