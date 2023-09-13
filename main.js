@@ -7,8 +7,27 @@ let loading = document.querySelector('.loading')
 const options = {
     method : "GET",
 }
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.querySelector(".loadingBar");
+    var width = 1;
+    var id = setInterval(frame, 30);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
 const search = function(url){
     loading.style.display = 'block'
+    move()
     setTimeout(async()=>{
     let response = await fetch(url, options);
     let result = await response.json();
@@ -27,11 +46,13 @@ const search = function(url){
 loading.style.display = 'none'
 animeres.appendChild(cardTemplate)
     } 
-    console.log('worked')
-}, 10000)
+    console.log(result.results)
+}, 1000)
     
     
   
 }
 
 submitBtn.addEventListener('click', () => { let child = animeres.lastElementChild; while(child){animeres.removeChild(child); child = animeres.lastElementChild}; search(`https://searchanimeapi.onrender.com/anime/zoro/${document.querySelector('#searchBox').value}?page=${page}`);console.log('clicked') })
+
+
