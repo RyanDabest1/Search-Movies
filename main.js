@@ -1,4 +1,4 @@
-const URL = "https://consumentapi.onrender.com/anime/zoro/";
+const URL = "https://searchanimeapi.onrender.com/anime/zoro/";
 let page = 1;
 let submitBtn = document.querySelector('.searchBtn')
 let animeList = document.querySelector('.animeList')
@@ -34,4 +34,4 @@ animeres.appendChild(cardTemplate)
   
 }
 
-submitBtn.addEventListener('click', () => { let child = animeres.lastElementChild; while(child){animeres.removeChild(child); child = animeres.lastElementChild}; search(`https://consumentapi.onrender.com/anime/zoro/${document.querySelector('#searchBox').value}?page=${page}`);console.log('clicked') })
+submitBtn.addEventListener('click', () => { let child = animeres.lastElementChild; while(child){animeres.removeChild(child); child = animeres.lastElementChild}; search(`https://searchanimeapi.onrender.com/anime/zoro/${document.querySelector('#searchBox').value}?page=${page}`);console.log('clicked') })

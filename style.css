@@ -16,6 +16,7 @@ body{
 .searchPlace{
     width: 25%;
     margin: auto;
+    padding: 10px;
 }
 .searchBtn{
     background-color: white;
