@@ -4,6 +4,7 @@ let submitBtn = document.querySelector('.searchBtn')
 let animeList = document.querySelector('.animeList')
 let animeres = document.querySelector('.animeResults')
 let loading = document.querySelector('.loading')
+let pageNav = document.querySelector('.pageControl')
 const options = {
     method : "GET",
 }
@@ -44,6 +45,7 @@ const search = function(url){
   </div>
 </div>`;
 loading.style.display = 'none'
+pageNav.style.display = 'block'
 animeres.appendChild(cardTemplate)
     } 
     console.log(result.results)
