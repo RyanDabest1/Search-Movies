@@ -74,11 +74,23 @@ body{
 .pageNav{
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 3em;
+    transition:all 1s;
+}
+.pageNav:hover{
+    background: black;
+    border: 3px solid white;
+}
+.fa-solid:hover{
+    color: white;
 }
 .pageControl{
     width: 6%;
     margin: auto;
     display: none;
+}
+.fa-solid{
+    color: black;
+    transform: all 1s;
 }
