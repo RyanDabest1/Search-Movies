@@ -14,8 +14,7 @@ body{
     background: black !important;
 }
 .searchPlace{
-    width: 25%;
-    margin: auto;
+    margin-left: 37%;
     padding: 10px;
 }
 .searchBtn{
@@ -42,6 +41,7 @@ body{
     gap: 10px;
     flex-wrap: wrap;
     margin-left: 50px;
+    margin-left: 83px;
 }
 
 #searchBox{
@@ -86,11 +86,42 @@ body{
     color: white;
 }
 .pageControl{
-    width: 6%;
-    margin: auto;
+    margin-left: 49%;
     display: none;
 }
 .fa-solid{
     color: black;
     transform: all 1s;
+}
+@media screen and (min-width: 700px) {
+    .searchPlace{
+        margin-left: 31%;
+    }
+    .pageControl{
+        margin-left: 49%;
+    }
+    
+}
+@media screen and (min-width: 660px){
+    .searchPlace {
+        margin-left: 28%;
+    }
+    .animeResults{
+        margin-left: 8%;
+    }
+    .pageControl{
+        margin-left: 47%;
+    }
+}
+@media screen and (min-width: 300px) {
+    .searchPlace {
+        margin-left: 8%;
+    }
+    .animeResults{
+        margin-left: 46px;
+    }
+    .pageControl{
+        margin-left: 41%;
+    }
+    
 }

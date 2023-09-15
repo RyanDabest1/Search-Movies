@@ -58,7 +58,8 @@ animeres.appendChild(cardTemplate)
 }, 1000)
 }
 
-submitBtn.addEventListener('click', () => { page = 1; let child = animeres.lastElementChild; while(child){animeres.removeChild(child); child = animeres.lastElementChild}; search(`https://searchanimeapi.onrender.com/anime/zoro/${document.querySelector('#searchBox').value}?page=${page}`);console.log('clicked') })
+submitBtn.addEventListener('click', () => { page = 1; let child = animeres.lastElementChild; while(child){animeres.removeChild(child); child = animeres.lastElementChild}; pageNav.style.display = 'none'
+search(`https://searchanimeapi.onrender.com/anime/zoro/${document.querySelector('#searchBox').value}?page=${page}`);console.log('clicked') })
 
 nextPage.addEventListener('click', async() => 
 {
